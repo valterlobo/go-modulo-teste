@@ -13,7 +13,7 @@ func NewTaskRepository() *TaskRepository {
 
 func (repository *TaskRepository) GetByID(id string) (model.Task, error) {
 
-	var task model.Task = model.Task{id, "definir modulo", "Definir os modulos da app em golang", true}
+	var task model.Task = model.Task{id, "definir modulo", "", true}
 
 	return task, nil
 
